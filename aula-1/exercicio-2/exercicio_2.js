@@ -1,5 +1,3 @@
-import  {informer} from "../../library"
-
 let value
 
 do {
