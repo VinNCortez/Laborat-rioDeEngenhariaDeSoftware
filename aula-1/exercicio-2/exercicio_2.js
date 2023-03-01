@@ -7,16 +7,18 @@ do {
 let divisions = 0
 let prime_number = true
 
-for(let i = 1; i < value / 2 + 1; i++) {
+for(let i = 1; i < Math.ceil(value / 2); i++) {
     if (value % i === 0){
-        console.log(value, )
+        console.log(i)
         if (++divisions > 1){
             alert("O número não é Primo")
             prime_number = false
+            console.log("entrou no break")
             break
         }
     }
 }
-if (!prime_number){
+console.log(divisions)
+if (prime_number){
     alert("O número é primo")
 }

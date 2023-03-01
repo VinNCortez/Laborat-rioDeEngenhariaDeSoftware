@@ -1,9 +1,4 @@
-function applyZeros(number){
-    return number.toString().padStart(2, "0")
-}
-
 let h1 = document.createElement("h1")
-
 
 document.body.append(h1)
 
