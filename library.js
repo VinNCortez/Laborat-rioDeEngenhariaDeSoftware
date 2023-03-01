@@ -1,6 +1,6 @@
-export const informer = "Informe um número inteiro e positivo"
+const informer = "Informe um número inteiro e positivo"
 
-export function parseValue(value){
+function parseValue(value){
     if (isNaN(value)){
         return value
     } else {
@@ -8,7 +8,7 @@ export function parseValue(value){
     }
 }
 
-export function fatorial(value){
+function fatorial(value){
     if (value ===  0){
         return 1
     } else if (value === 1){
