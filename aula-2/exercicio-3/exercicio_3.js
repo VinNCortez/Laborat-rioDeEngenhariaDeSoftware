@@ -13,4 +13,4 @@ function verifyPalindromo(){
     }
 }
 
-document.getElementsByTagName("input")[0].addEventListener("blur", verifyPalindromo)
+document.getElementsByTagName("input")[0].addEventListener("keyup", verifyPalindromo)
