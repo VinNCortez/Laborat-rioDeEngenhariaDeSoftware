@@ -7,11 +7,12 @@ function addTextInList(){
     if (list.length === 0) {
         document.getElementById("list").append(li)
     } else {
+        let end_of_list = list.length - 1
         for (let i = 0; i < list.length; i++) {
-            if (i === list.length - 1) {
+            if (i === end_of_list) {
                 li.innerText <= list.item(i).innerText ? list.item(i).before(li) : list.item(i).after(li)
                 break
-            } else if (li.innerText <= list.item(i).innerText) {
+            } else if (li.innerText.toLowerCase() <= list.item(i).innerText.toLowerCase()) {
                 list.item(i).before(li)
                 break
             }
